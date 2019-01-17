@@ -1,7 +1,28 @@
-# privacy.surf.nl
+# Requirements privacy.surf.nl
+------------------------------
+## 0. Project
+### 0.1 Transparancy
+* The privacy documentation of SURF is transparent to the public.
+* The rights of data subjects are transparent and easily invoked.
+* All SURF privacy related information is easily accessible on one website.
 
-## 1. hugo-surf-theme
-### 1.1 folder structure
+### 0.2 Control
+* All content and information is exclusively and directly controlled by the responsible privacy officer(s).
+* All content mutations/changes will be transparently and safely (no later manipulation) recorded. GitHub's Version Control System is being used for this.
+* In the future, the Version Control System (GitHub in this case) can easily be swapped out by another Version Control System with similar properties. Most Content Management Systems don't have a true Version Control System and are no fitting replacement to this.
+* All content mutations/changes can be managed (only) by the responsible privacy officer(s).
+
+### 0.3 Personal data
+* The website does not contain *any* tracker or other privacy narrowing technologies. Data subjects should be able to receive all SURF privacy related information without giving up personal data.
+* The website only logs personal data that is strictly neccesary for the purpose of the transparent information provision about privacy at SURF. This means that limited logging of for example IP addresses for ensuring the availability and/or security of the website would be proportional, but that no other information will be logged.
+
+### 0.4 Social responsibility
+* All created code (logo's, trademarks, icons etc. are excluded) will be open source/free software.
+* All code will be easily reusable by others, for example to create their own transparent privacy register or to improve upon.
+
+---------------------
+## 1. Hugo-surf-theme
+### 1.1 Folder structure
 ```
 theme
 ├── images
@@ -26,7 +47,7 @@ theme
 └── theme.toml
 ```
 
-### 1.2 layout
+### 1.2 Layout
 ```
 > HEAD
 > HEADER/NAVIGATION
@@ -34,7 +55,7 @@ theme
 > FOOTER
 ```
 
-### 1.3 requirements
+### 1.3 Requirements
 #### 1.3.1 General
 Speed, efficiency, accessibility, privacy and security are important aspects of privacy.surf.nl.
 
@@ -93,7 +114,9 @@ Speed, efficiency, accessibility, privacy and security are important aspects of 
 #### 1.3.6 Hugo
 * Hugo asset minification is possible.
 
-#### 1.3.7 Webserver
+---------------
+## 2. webserver
+### 2.1 Requirements
 * Uses strong TLS configuration.
 * Uses restrictive security headers.
 * Exclusively static serving.
