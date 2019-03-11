@@ -17,7 +17,7 @@
 * The website only logs personal data that is strictly neccesary for the purpose of the transparent information provision about privacy at SURF. This means that limited logging of for example IP addresses for ensuring the availability and/or security of the website would be proportional, but that no other information will be logged.
 
 ### 0.4 Social responsibility
-* All created code (logo's, trademarks, icons etc. are excluded) will be open source/free software.
+* All creations (logo's, trademarks, icons etc. are excluded) will be open source/free software.
 * All code will be easily reusable by others, for example to create their own transparent privacy register or to improve upon.
 
 ---------------------
@@ -91,7 +91,7 @@ Speed, efficiency, accessibility, privacy and security are important aspects of 
 * js will be locally hosted.
 * images will be locally hosted.
 
-#### 1.3.5 Features
+#### 1.3.5 Page features
 * All features are usable with basic syntax in content files. For additional features (outside default Markdown) easy to use syntax will be used.
 * The standard GitHub-flavoured markdown features
     * headers / header underline
@@ -111,7 +111,19 @@ Speed, efficiency, accessibility, privacy and security are important aspects of 
 * Expansion tab (nested)
 * Privacy overview block
 
-#### 1.3.6 Hugo
+
+#### 1.3.6 Menu header
+* Submenu functinality
+* Search functionality
+    * If possible with pre-defined tags that link to a specific part of a page
+
+#### 1.3.7 Picture header
+* Header image can be added to page (after menu header, before content)
+
+#### 1.3.8 Footer
+* Footer supports configurable links (internal and external).
+
+#### 1.3.9 Hugo
 * Hugo asset minification is possible.
 
 ---------------
