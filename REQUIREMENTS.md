@@ -1,6 +1,6 @@
 # Requirements privacy.surf.nl
 ------------------------------
-## 0. Project
+## 0. General project requirements
 ### 0.1 Transparancy
 * The privacy documentation of SURF is transparent to the public.
 * The rights of data subjects are transparent and easily invoked.
@@ -14,7 +14,7 @@
 
 ### 0.3 Personal data
 * The website does not contain *any* tracker or other privacy narrowing technologies. Data subjects should be able to receive all SURF privacy related information without giving up personal data.
-* The website only logs personal data that is strictly neccesary for the purpose of the transparent information provision about privacy at SURF. This means that limited logging of for example IP addresses for ensuring the availability and/or security of the website would be proportional, but that no other information will be logged.
+* The website only logs personal data that is strictly neccesary for the purpose of the transparent information provision about privacy at SURF. This means that limited logging of for example (parts of) IP addresses for ensuring the availability and/or security of the website would be proportional, but that no other information will be logged.
 
 ### 0.4 Social responsibility
 * All creations (logo's, trademarks, icons etc. are excluded) will be open source/free software.
@@ -23,6 +23,7 @@
 ---------------------
 ## 1. Hugo-surf-theme
 ### 1.1 Folder structure
+The folder structure is open for debate.
 ```
 theme
 ├── images
@@ -48,12 +49,18 @@ theme
 ```
 
 ### 1.2 Layout
+The lay-out is open for debate.
 ```
 > HEAD
 > HEADER/NAVIGATION
 > PAGE CONTENT
 > FOOTER
 ```
+
+### 1.3 Look and feel
+* The styling follows the house theme of surf.nl.
+* Different menu/header layouts are used throughout surf.nl, the one we choose is shared with the developer.
+* The styling on surf.nl is followed as closely as possible.
 
 ### 1.3 Requirements
 #### 1.3.1 General
@@ -74,13 +81,13 @@ Speed, efficiency, accessibility, privacy and security are important aspects of 
     * Mobile browsers Android
 
 #### 1.3.2 CSS
-* There is only one file (`main.css`).
+* There is only one file (i.e. `main.css`).
 * The CSS file only contains entries that are really used.
 * The CSS is responsive on different screen formats and resolutions.
 
 #### 1.3.3 JS
 * Will be kept to a absolute minimum.
-* The theme and website is fully functional without javascript.
+* The theme and website is fully functional without javascript. This requirement may bite with `1.3.5`'s elements like accordions, expansion tabs etc. The proper fix can be discussed after it has been deemed impossible or too hard.
 
 #### 1.3.4 Resources
 * No external resources will be used.
@@ -111,11 +118,9 @@ Speed, efficiency, accessibility, privacy and security are important aspects of 
 * Expansion tab (nested)
 * Privacy overview block
 
-
 #### 1.3.6 Menu header
-* Submenu functinality
-* Search functionality
-    * If possible with pre-defined tags that link to a specific part of a page
+* Submenu functionality
+* Search functionality with pre-defined tags that link to a specific part of a page.
 
 #### 1.3.7 Picture header
 * Header image can be added to page (after menu header, before content)
@@ -129,6 +134,7 @@ Speed, efficiency, accessibility, privacy and security are important aspects of 
 ---------------
 ## 2. webserver
 ### 2.1 Requirements
+* Compatible with general purpose webservers like Apache and Nginx.
 * Uses strong TLS configuration.
 * Uses restrictive security headers.
 * Exclusively static serving.
