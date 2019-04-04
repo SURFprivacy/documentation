@@ -8,8 +8,8 @@
 
 ### 0.2 Control
 * All content and information is exclusively and directly controlled by the responsible privacy officer(s).
-* All content mutations/changes will be transparently and safely (no later manipulation) recorded. GitHub's Version Control System is being used for this.
-* In the future, the Version Control System (GitHub in this case) can easily be swapped out by another Version Control System with similar properties. Most Content Management Systems don't have a true Version Control System and are no fitting replacement to this.
+* All content mutations/changes will be transparently and safely (no later manipulation) recorded. In this case git (specifically GitHub) is being used for this.
+* In the future, the GitHub can easily be swapped out by another git wrapper with similar properties. Most Content Management Systems (like Wordpress, Drupal, Joomla etc.) don't have a true Version Control System and are no fitting replacement to this.
 * All content mutations/changes can be managed (only) by the responsible privacy officer(s).
 
 ### 0.3 Personal data
